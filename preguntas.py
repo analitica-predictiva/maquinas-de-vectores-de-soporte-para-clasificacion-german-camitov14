@@ -224,7 +224,7 @@ def pregunta_03():
     # Cree un pipeline que contenga el columnTransformer y el modelo SVC.
     pipeline = Pipeline(
         steps=[
-            ("columnTransformer", columnTransformer()),
+            ("columnTransformer", columnTransformer.fit_transform()),
             ("SVC", SVC()),
         ],
     )
