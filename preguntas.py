@@ -256,7 +256,7 @@ def pregunta_04():
         y_pred=pipeline.predict(X_train),
     )
 
-    cfm_test = ____(
+    cfm_test = confusion_matrix(
         y_true=y_test,
         y_pred=pipeline.predict(X_test),
     )
